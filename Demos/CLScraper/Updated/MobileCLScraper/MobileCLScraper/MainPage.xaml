@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:common="clr-namespace:CLScraper.Common;assembly=CLScraper.Common"
+             xmlns:mobileClScraper="clr-namespace:MobileCLScraper;assembly=MobileCLScraper"
+             x:Class="MobileCLScraper.MainPage"
+             Title="Search CraigsList">
+
+    <StackLayout Padding="20">
+        <SearchBar x:Name="SearchFor" SearchButtonPressed="OnSearchButtonPressed" />
+        <Picker x:Name="SearchCity" ItemsSource="{Binding Source={x:Static common:CraigsList.Cities}}" SelectedIndex="0" />
+        <ListView x:Name="Results" ItemTapped="OnItemTapped" HasUnevenRows="True" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--<TextCell Text="{Binding Value}" />-->
+                    <ViewCell>
+                        <mobileClScraper:BorderFrame>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="2*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label TextColor="Green" Text="{Binding Price, StringFormat='{0:c}'}" Grid.Column="0" Grid.Row="0" />
+                                <Label TextColor="Gray" Text="{Binding Date, StringFormat='{0:g}'}" Grid.Column="1" HorizontalTextAlignment="End" Grid.Row="0" />
+                                <Label Text="{Binding Title}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" LineBreakMode="WordWrap" />
+                            </Grid>
+                        </mobileClScraper:BorderFrame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    
+</ContentPage>

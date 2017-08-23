@@ -1,0 +1,120 @@
+﻿<Window x:Class="VacationSpots.AllVacationsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:vacationSpots="clr-namespace:VacationSpots"
+        xmlns:infrastructure="clr-namespace:VacationSpots.Infrastructure"
+        xmlns:viewModels="clr-namespace:VacationSpots.ViewModels;assembly=VacationSpots.Common"
+        Title="Vacation Planner" Height="600" Width="800" 
+        WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <viewModels:MainViewModel />
+    </Window.DataContext>
+    
+    <DockPanel Background="{DynamicResource BackgroundBrush}">
+        <Border Background="{DynamicResource BackgroundAreaBrush}" DockPanel.Dock="Top"
+                BorderBrush="White" BorderThickness="0,0,0,1">
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="36pt"
+                       Foreground="{DynamicResource TitleBrush}"
+                       FontFamily="Ravie"
+                       Text="Vacation Planner">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="White" />
+                </TextBlock.Effect>
+            </TextBlock>
+        </Border>
+
+        <StatusBar Background="{DynamicResource BackgroundAreaBrush}" DockPanel.Dock="Bottom">
+            <Grid Background="Transparent"
+                  infrastructure:MouseBehaviors.ClickCommand="{Binding RemoveCommand}">
+                <Rectangle Stroke="White"
+                           StrokeThickness="4"
+                           RadiusX="10"
+                           RadiusY="10"
+                           Width="50"
+                           Height="50" />
+                <TextBlock Text="&#xE107;" 
+                           FontSize="16pt"
+                           FontFamily="Segoe UI Symbol" Foreground="White"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+            </Grid>
+            
+            
+            <StatusBarItem HorizontalAlignment="Right">
+                <Button Content="&#xE1A3;" 
+                        AutomationProperties.Name="Show"
+                        Style="{StaticResource RoundButtonStyle}"
+                        Click="OnShowCurrentVacation" />
+            </StatusBarItem>
+        </StatusBar>
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="Select your Destination"
+                       FontSize="12pt" Foreground="{DynamicResource TextLabelBrush}"
+                       FontWeight="Bold" HorizontalAlignment="Left"
+                       VerticalAlignment="Center" Margin="5" />
+            
+            <ListBox x:Name="VacationLb" 
+                     Margin="5,0,5,10" Grid.Row="1" Grid.Column="0"
+                     ItemsSource="{Binding AllVacations}"
+                     SelectedItem="{Binding SelectedVacation, Mode=TwoWay}"
+                     Background="{DynamicResource BackgroundAreaBrush}"
+                     Foreground="{DynamicResource TextLabelBrush}"
+                     FontSize="12pt">
+                <ListBox.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.HeaderTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="White" BorderThickness="1" Background="DarkRed" Padding="5">
+                                    <StackPanel Orientation="Horizontal" TextElement.Foreground="White" TextElement.FontSize="16pt">
+                                        <TextBlock Text="{Binding Name}" />
+                                        <TextBlock Text=" : " />
+                                        <TextBlock Text="{Binding ItemCount}" />
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                    </GroupStyle>
+                </ListBox.GroupStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <DockPanel>
+                            <Image DockPanel.Dock="Left"
+                                   Source="{Binding ImageStream, Converter={StaticResource imgConverter}}"
+                                   Width="75" Height="75" Margin="5"/>
+                            <StackPanel Width="200">
+                                <TextBlock FontSize="14pt"
+                                           Text="{Binding Title}"
+                                           FontWeight="Bold"
+                                           Foreground="White"
+                                           Margin="5"/>
+                                <TextBlock FontSize="10pt" Foreground="LightGray"
+                                           Text="{Binding Subtitle}"
+                                           MaxHeight="100"
+                                           TextWrapping="Wrap"
+                                           TextTrimming="CharacterEllipsis"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <vacationSpots:VacationDetailsView x:Name="VacationDetails"
+                Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Margin="5" />
+            
+        </Grid>
+
+    </DockPanel>
+</Window>

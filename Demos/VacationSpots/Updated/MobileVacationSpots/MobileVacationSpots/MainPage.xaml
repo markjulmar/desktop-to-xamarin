@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="MobileVacationSpots.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobileVacationSpots"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:converters="clr-namespace:MobileVacationSpots.Converters;assembly=MobileVacationSpots"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:VacationSpots.ViewModels;assembly=VacationSpots.Common"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance Type=viewModels:MainViewModel, IsDesignTimeCreatable=True}">
+
+    <Grid BackgroundColor="Black">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Label">
+                    <Setter Property="TextColor" Value="White" />
+                    <Setter Property="FontSize" Value="14" />
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <cv:CarouselView x:Name="VacationCarousel" Grid.RowSpan="2"
+                            ItemsSource="{Binding AllVacations}"
+                            Item="{Binding SelectedVacation, Mode=TwoWay}">
+            <cv:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Aspect="AspectFill" 
+                            Source="{Binding ImageStream, Converter={converters:ImageStreamConverter}}"/>
+                </DataTemplate>
+            </cv:CarouselView.ItemTemplate>
+        </cv:CarouselView>
+
+        <Frame BackgroundColor="#80000000" Grid.Row="1" Padding="0" CornerRadius="0" HasShadow="True">
+            <Grid Padding="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="ExpandArrow" Text="▲" FontSize="16" TextColor="#f0f0f0"
+                       Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Start"/>
+                <StackLayout Grid.Row="1" Padding="20,5,20,20">
+                    <Label Text="{Binding SelectedVacation.Title}" FontSize="16"/>
+                    <Label Text="{Binding SelectedVacation.Subtitle}"/>
+                    <ScrollView x:Name="DescriptionText" Margin="0,20,0,0" 
+                            IsVisible="False" Opacity="0" HeightRequest="0" Orientation="Vertical">
+                        <Label Text="{Binding SelectedVacation.Description}" />
+                    </ScrollView>
+                </StackLayout>
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnExpandFrame" />
+                </Grid.GestureRecognizers>
+            </Grid>
+        </Frame>
+    </Grid>
+
+</ContentPage>

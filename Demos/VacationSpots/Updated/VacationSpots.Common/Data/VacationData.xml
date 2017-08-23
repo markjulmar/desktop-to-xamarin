@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<vacations>
+  <category id="1" title="Beach Locations" subtitle="Relaxing on the sands" description="Enjoy relaxing on a beach with a cool drink listening to the waves? Then this vacation is for you!" image="Data.images.category1.jpg">
+    <destination id="1.1" title="Dominican Republic" subtitle="Caribbean Vacation" image="Data.images.dest1.1.jpg">
+      Distinguished by long stretches of glowing white sand and gorgeous blue water, Dominican beaches rank among the best in the world. From Puerto Plata to Punta Cana to Barahona, these beaches cater to bar lovers, sunbathers, jet skiers and scuba divers. Offering a lush interior with a mix of caves, Victorian gingerbread houses and the lore of pirates, plus 900 miles of coastline along its brim, island highlights include riding a cable car up Mount Isabel de Torres and basking on stunning Saona Island.
+    </destination>
+    <destination id="1.2" title="Playa del Carmen" subtitle="Yucatan Peninsula, Mexico" image="Data.images.dest1.2.jpg">
+      Bring your sunglasses and cool clothes to Playa del Carmen, where the hot sun lights up the white-sand beaches. This is heaven for beach-loving kids and those who enjoy swimming or just lounging under the sun.
+    </destination>
+    <destination id="1.3" title="Maui" subtitle="Hawaii, United States" image="Data.images.dest1.3.jpg">
+      Tropical trade winds cool Maui's thirty miles of glorious black, white and red sand beaches. With a constellation of splendid sandy spots ranging from secluded secrets to bustling beaches with restaurants and board hire, Maui has a beach to suit beachcombers, surfers, picnickers and swimmers.
+    </destination>
+    <destination id="1.4" title="Cancun" subtitle="Yucatan Peninsula, Mexico" image="Data.images.dest1.4.jpg">
+      Cancun calls with its stunning aqua-blue waters and white-sand beaches. Despite its reputation as a spring-break paradise, anyone will find plenty to do here, too. Explore ancient Mayan ruins, the Xel-Ha waterpark and the thrilling Interactive Aquarium, or just enjoy beautiful beaches
+    </destination>
+    <destination id="1.5" title="Puerto Vallarta" subtitle="Pacific Coast, Mexico" image="Data.images.dest1.5.jpg">
+      On the second-largest natural bay on the continent, Puerto Vallarta has miles and miles of world-class beaches. The coastline is dotted with quiet coves and spectacular islands, and the water caters to all sorts of beach activities, from sunbathing to snorkeling to windsurfing.
+    </destination>
+    <destination id="1.6" title="Miami Beach" subtitle="Florida, United States" image="Data.images.dest1.6.jpg">
+      At the shore in Miami Beach, visitors can swim, surf and jet ski in the warm and crystal-clear Atlantic waters. You can also nap on the white sands, work on a tan or simply watch the beautiful people, especially at South Beach, a favorite of models and celebrities.
+    </destination>
+    <destination id="1.7" title="Phuket Beach" subtitle="Thailand" image="Data.images.dest1.7.jpg">
+      Phuket is Thailand's most popular island destination, and one reason is that its coastline is divided into bays that form intimate beaches. You can get a soothing massage right on the beach, the scuba diving is spectacular and the locals greet you with smiles.
+    </destination>
+    <destination id="1.8" title="Sydney" subtitle="New South Whales, Australia" image="Data.images.dest1.8.jpg">
+      With dozens of stunning ocean beaches within half an hour of downtown, there are few better urban beach destinations than Sydney. Famed Bondi Beach sees up to 40,000 on busy weekends. If quieter beaches appeal, take the coastal walk past smaller strands all the way to Coogee's calmer sands.
+    </destination>
+  </category>
+  <category id="2" title="Amusement Parks" subtitle="Rollercoaster? I'm in!" description="Are you a thrill ride junkie? Come and experience some of the best parks in the world!" image="Data.images.category2.jpg">
+    <destination id="2.1" title="Universal Studios" subtitle="Hollywood, California" image="Data.images.dest2.1.jpg">
+      Get ready for the ultimate Hollywood experience!
+      Find a full day of action-packed entertainment all in one place:  thrilling theme park rides and shows, a real working movie studio, and Los Angeles’ best shops, restaurants and cinemas at CityWalk. Universal Studios Hollywood is a unique experience that’s fun for the whole family.
+    </destination>
+    <destination id="2.2" title="Six Flags Over Texas" subtitle="Arlington, Texas" image="Data.images.dest2.2.jpg">
+      Welcome to Six Flags Over Texas, a 212-acre park featuring awesome rides, great shows, and incredible attractions!
+    </destination>
+    <destination id="2.3" title="Disney's Magic Kingdom" subtitle="Lake Buena Vista, Florida" image="Data.images.dest2.3.jpg">
+      The first of the 4 theme parks to open at Walt Disney World Resort, Magic Kingdom park captures the enchantment of fairy tales with exciting entertainment, classic attractions, beloved Disney Characters and so much more.
+    </destination>
+    <destination id="2.4" title="Knotts Berry Farm" subtitle="Buena Park, California" image="Data.images.dest2.4.jpg">
+      Discover California's best amusement park for a day of thrills, adventures, and family fun! Come visit Knott's Berry Farm today for a fun-filled time!
+    </destination>
+    <destination id="2.5" title="SeaWorld" subtitle="San Diego, California" image="Data.images.dest2.5.jpg">
+      SeaWorld Orlando offers roller coasters, rides, shows, tours, attractions and family-friendly activities for thrill seekers and animal lovers alike.
+    </destination>
+  </category>
+  <category id="3" title="European Tours" subtitle="For the history buff" description="Come visit the wonders of the world and see where western civilation was formed." image="Data.images.category3.jpg">
+    <destination id="3.1" title="London" subtitle="London Tower, Sherlock Holmes and the Queen .. need we say more?" image="Data.images.dest3.1.jpg">
+      London is a wonderful place to visit but make sure you plan in advance to make the most of your time. There is an incredible amount of options to consider: when to visit, where to stay, what to see... it's all amazing!
+    </destination>
+    <destination id="3.2" title="Rome" subtitle="There's lots to see in one of the world's most famous and historically and culturally rich cities." image="Data.images.dest3.2.jpg">
+      Rome is one of those cities you could spend a year in and still feel like you've barely scratched its surface. Amazing historical sites, mind-blowing art—and then there's the food. Stop at the Forno in the Campo de' Fiori for a fresh slice of pizza bianca (cut from a piping hot six-foot-long slab of it), buy some tiny strawberries in a street market, and make it your business to find the city's best gelato. Someone has to do it.
+    </destination>
+    <destination id="3.3" title="Paris" subtitle="Whether you've been to Paris one time or 10, you'll always find pleasurable surprises in store. As the French say, Allons-y (Let's go)!" image="Data.images.dest3.3.jpg">
+      Everyone wants to see the major sights of Paris—and it's true, it'd be criminal to leave town without visiting the Louvre, the Eiffel Tower, Notre Dame, etc. But to truly appreciate this city, you need to get away from the tourist sights. Plunk yourself down at a table in a small café, enjoy a glass of wine and watch le monde go by.
+    </destination>
+    <destination id="3.4" title="Instanbul" subtitle="In this gleaming modern mega-city you can immerse yourself in nearly 3,000 years of history, from Roman ruins to Byzantine marvels, Ottoman treasures and modern amusements." image="Data.images.dest3.4.jpg">
+      The city of Istanbul is a vibrant mix of many cultures, due in part to its location (straddling Europe and Asia across the Bosphorus Strait) and, well, in part to its history of getting conquered. The Hagia Sophia, for example, was a church, then a mosque and is now a museum. You'll spot Greek, Roman, Byzantine and Ottoman architecture around town.
+    </destination>
+    <destination id="3.5" title="Barcelona" subtitle="There is a bit of walking involved, so sneaker up! You do not want to miss a thing, in many travelers' favorite city." image="Data.images.dest3.5.jpg">
+      Architecture buffs should make a beeline for Barcelona. The medieval and Roman buildings in the Gothic Quarter (Barri Gotic) provide quite a contrast to Antoni Gaudi's fanciful architecture, which you'll find all around the city. A visit to his still-unfinished Church of the Sacred Family (Templo Expiatorio de la Sagrada Familia) is a must.
+    </destination>
+    <destination id="3.6" title="Berlin" subtitle="Make sure you have comfortable shoes and a camera. Pick up a free map at one of the tourist centers or at your hotel and hostel." image="Data.images.dest3.6.jpg">
+      Berlin is a multi-faceted city. So feast your eyes on modern architecture, then visit a Baroque palace. Spend the day at one of the world's finest zoos, then spend the evening listening to one of the world's finest orchestras. Most travelers make a point of taking in more serious WWII-related sights as well. Travelers give particularly high marks to the grim but thorough and thought-provoking Topography of Terror exhibit.
+    </destination>
+    <destination id="3.7" title="Florence" subtitle="Florence is a treasure trove with so many things to see that a few days won't be enough. But make sure you don't miss these top sights by planning well and trying not to over do it." image="Data.images.dest3.7.jpg">
+      Everyone’s heard the Doors of Paradise, the Duomo, and Michelangelo’s David are captivating, but in Florence, beauty can sneak up on a traveler unexpectedly. You’ll duck into a random church to escape the heat only to spend two hours staring at an impossibly pure blue in a fresco. Or you’ll consider writing a sonnet about pear gelato. It’s just that kind of place. Don't miss the sunset over the Arno and the famous wines of the Chianti region just south of town.
+    </destination>
+    <destination id="3.8" title="Prague" subtitle="Sure, everyone’s heard of it, but it’s still a grand city with extraordinary historic and cultural sights, and it’s definitely worth a visit." image="Data.images.dest3.8.jpg">
+      The often-rebuilt Prague Castle has overlooked the city since the 9th century, and the synagogues and cemetery of the Jewish Quarter are must-sees. Nightlife here is diverse and plentiful, from trendy clubs to sophisticated wine bars to late-night cellar bars.
+    </destination>
+    <destination id="3.9" title="Dublin" subtitle="You can't say you hate Guinness until you've had it in Dublin. It's different. And it's fantastic." image="Data.images.dest3.9.jpg">
+      It's easy to love Dublin. Where else can you legitimately learn about local history and culture by visiting multiple pubs? Leave time for a stroll along the Liffey, a peek at the Book of Kells and, on a more serious note, a visit to the Kilmainham Gaol Historical Museum.
+    </destination>
+  </category>
+  <category id="4" title="Sports and Activities" subtitle="The action/adventure lover's place to be!" description="Football, Golf, Baseball, we've got it all here!" image="Data.images.category4.jpg">
+    <destination id="4.1" title="Superbowl XLVII" subtitle="New Orleans, LA." image="Data.images.dest4.1.jpg">
+      Super Bowl XLVII is scheduled to take place in New Orleans, LA.  Make this the year you experience the BIG event! Every Super Bowl travel package can be customized to your unique needs.
+    </destination>
+    <destination id="4.2" title="World Cup Soccer 2014" subtitle="Brazil" image="Data.images.dest4.2.jpg">
+      Nothing is more exciting that the World Cup where 32 teams compete for the title of the best.  This next tournament is hosted by Brazil who has won the cup 5 times, can they do it again?
+    </destination>
+    <destination id="4.3" title="Olympics 2016" subtitle="Rio De Janeiro" image="Data.images.dest4.3.jpg">
+      The city of Rio de Janeiro has been elected host city of the XXXI Olympic Summer Games in 2016 - make your plans to be there!
+    </destination>
+    <destination id="4.4" title="Merion Golf Course" subtitle="Ardmore, Pa." image="Data.images.dest4.4.jpg">
+      Championship golf and champion golfers have long been intertwined with the mystique of Merion Golf Club’s East and West Courses.
+      Designed by Hugh Wilson, Merion’s East Course has played host to more USGA Championships than any course in America and is home to some of its greatest moments. From Robert Tyre Jones, Jr.'s completion of golf’s elusive Grand Slam at the 1930 U.S. Amateur held at Merion to Ben Hogan’s awe inspiring performance and now legendary one-iron on the 72nd hole during the 1950 U.S. Open, the sculpted greens, fairways, and treacherous bunkers of Merion have shaped the game.
+      Scheduled to host the 2013 U.S. Open, Merion continues to not only challenge the world’s best, but identify them as well.
+    </destination>
+    <destination id="4.5" title="Pebble Beach Golf Course" subtitle="Pebble Beach" image="Data.images.dest4.5.jpg">
+      Since 1919, golfers have relished this spectacular oceanside course, considered the greatest public golf course in America, which welcomed its fifth U.S. Open in 2010.
+    </destination>
+  </category>
+</vacations>
