@@ -1,49 +1,15 @@
 ﻿using System;
-using System.Xml.Linq;
 
 namespace CLScraper
 {
     public class Item
     {
-        public Item(int Num, string SearchTerm)
-        {
-            title = "";
-            location = "";
-            num = Num;
-            searchTerm = SearchTerm;
-            ID = Num + "," + SearchTerm;
-        }
+        public string Link { get; set; }
+        public double? Price { get; set; }
+        public DateTime Date { get; set; }
+        public string Location { get; set; }
+        public string Title { get; set; }
 
-        public XElement elem;
-
-        public int num;
-        public string searchTerm;
-        public string ID;
-
-        public string link;
-        public double? price;
-        public DateTime date;
-        public string location;
-        public string title;
-
-        public string Value
-        {
-            get
-            {
-                if (price != null)
-                {
-                    return "$" + price + ", " + date + ", " + location + ", " + title;
-                }
-
-                return "NO PRICE" + date + ", " + location + ", " + title;
-            }
-        }
-
-        public string formatForCSV()
-        {
-            return ID + "," + link + "," + price + "," + date + "," + location + "," + title;
-        }
-
-
+        public string Value => $"{Date:g}: {Price?.ToString("C") ?? "NO PRICE"} {Location} {Title}";
     }
 }

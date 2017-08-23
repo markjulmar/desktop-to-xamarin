@@ -52,7 +52,7 @@ namespace CLScraper.Common
             }
         }
 
-        static IEnumerable<Item> ParseResponse(string response)
+        private static IEnumerable<Item> ParseResponse(string response)
         {
             XDocument doc = XDocument.Parse(response);
             XElement topElement = doc.Elements().FirstOrDefault();
@@ -62,7 +62,7 @@ namespace CLScraper.Common
                 .ToList());
         }
 
-        public static IEnumerable<Item> ParseItems(List<XElement> items)
+        private static IEnumerable<Item> ParseItems(List<XElement> items)
         {
             foreach (XElement item in items)
             {
